@@ -127,7 +127,7 @@ resource "aws_instance" "burner_public_instance" {
   ami                         = "ami-0d64bb532e0502c46"
   associate_public_ip_address = true
   instance_type               = "t2.medium"
-  key_name                    = "rsa_kodehauz"
+  key_name                    = "rsa_aws"
   subnet_id                   = aws_subnet.burner_public_subnet.id
   vpc_security_group_ids      = [aws_security_group.burner_public_instance_sg.id]
 
